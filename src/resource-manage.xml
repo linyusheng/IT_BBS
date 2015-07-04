@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="resource-manage" extends="com.sedg">
+		<action name="listAllResource" class="ResourceAction" method="listAllResource">
+			<result name="success">/download-manage/download-index.jsp</result>
+		</action>
+		
+		<action name="saveResource" class="ResourceAction" method="saveResource">
+			<result type="redirect">/myScore</result>
+		</action>
+		<action name="downloadResource" class="ResourceAction" method="downloadResource"></action>
+		<action name="download" class="ResourceAction" method="download"></action>
+		<action name="deleteRecord" class="ResourceAction" method="deleteRecord">
+			<result type="redirect">/myDownload</result>
+		</action>
+	</package>
+</struts>

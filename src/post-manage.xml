@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="post-manage" extends="com.sedg">
+		<action name="hotPost" class="PostAction" method="hotPost">
+			<result name="success">/post-manage/hot-post.jsp</result>
+		</action>
+		<action name="activePost" class="PostAction" method="activePost">
+			<result name="success">/post-manage/active-post.jsp</result>
+		</action>
+		<action name="solvedPost" class="PostAction" method="solvedPost">
+			<result name="success">/post-manage/solved-post.jsp</result>
+		</action>
+		<action name="showPost" class="PostAction" method="showPost">
+			<result name="success">/post-manage/show-post.jsp</result>
+		</action>
+		<action name="findPost" class="PostAction" method="findPost">
+			<result name="success">/post-manage/search-post.jsp</result>
+		</action>
+		<action name="downloadPostPhoto" class="PostAction" method="downloadPostPhoto">
+		</action>
+		<action name="enterAsk" class="PostAction" method="enterAsk">
+			<result name="success">/post-manage/add-post.jsp</result>
+		</action>
+		<action name="savePost" class="PostAction" method="savePost">
+			<result type="redirect">/activePost</result>
+		</action>
+		
+	</package>
+</struts>

@@ -1,0 +1,58 @@
+/* blog-sort.jsp && blog-collect.jsp*/
+.body_right label{ display:block; float:left; width:708px; height:35px;line-height:35px;border-bottom:1px dashed #108AC6; font-size:14px;}
+.sort{ float:left; width:100%; height:45px;}
+.sort p{ display:block; float:left; line-height:45px;}
+.sort input{ display:block; float:left; height:25px;margin-top:10px; border:1px solid #108AC6;}
+.sort input[type="text"]{ padding-left:5px;}
+.sort input[type="submit"]{ background:#108AC6; color:#FFF; margin-left:10px; cursor:pointer; outline:none;}
+table{float:left;width:708px; border-collapse:collapse; font-size:12px;}
+thead{ color:#108AC6; font-weight:bold;}
+tr{ height:30px; }
+tbody tr{border-top:1px dashed #108AC6;}
+tbody tr td a:link,tbody tr td a:visited{ color:#108AC6; display:block; float:left; line-height:15px; margin-right:3px;}
+tbody tr td a:hover{color:#FFF; background:#108AC6;}
+.editLayer{ display:none;}
+.editLayer form{ display:block;float:left; width:280px; font-size:12px; margin-top:15px;}
+.editLayer p{ display:block;float:left; width:240px; height:30px; line-height:30px; margin:0; padding-left:40px;}
+.editLayer input{ display:block;float:left; border:1px solid #108AC6;}
+.editLayer input[type="text"]{ width:200px; height:20px; margin:5px 78px 10px 40px;}
+.editLayer input[type="submit"],input[type="button"]{ background:#108AC6; color:#FFF; cursor:pointer; margin-right:10px;}
+/* blog-comment.jsp  */
+.comment{ float:left; width:100%;}
+.comment ul li{ display:block; float:left; width:100%; border-bottom:1px dashed #108AC6;}
+.comment_header{ float:left; width:100%;background:#EFFAFF;height:30px; line-height:30px;}
+.comment_header p{ display:block; float:left;}
+.comment_header p a:link,.comment_header p a:visited{ color:#108AC6;}
+.comment_header p a:hover{color:#FFF; background:#108AC6;}
+.comment_text{ float:left; width:100%; margin:5px 0 10px 0;}
+/* blog-show.jsp*/
+.blog-title{float:left; width:100%; height:50px; line-height:50px;}
+.blog-title h3{ display:block; float:left; font-size:18px; margin:0 auto;}
+.blog-title a:link,.blog-title a:visited{ display:block; float:left;width:16px; height:16px; margin:17px 0 0 10px;}
+.blog-time,.blog-sort{float:left;width:100%; height:30px; line-height:30px;}
+.blog-sort h4{ display:block;float:left;}
+.blog-sort a:link,.blog-sort a:visited{ display:block;float:left;}
+.blog-text{float:left;width:100%;}
+/*post-ask.jsp,post-answer.jsp*/
+.post_tab{ float:left; width:100%; height:28px; border-bottom:1px solid #108AC6; margin:10px 0 10px 0;}
+.post_tab ul li{ display:block; float:left; width:80px; height:27px; line-height:27px; text-align:center; border:1px solid #108AC6; background:#DDDDDD; border-bottom:none; margin-left:30px;}
+.post_tab ul li a:link,.post_tab ul li a:visited{ display:block;width:80px; height:27px;text-decoration:none; color:#333;}
+.post_tab ul li.on{ background:#FFF; height:28px;}
+.post_tab ul li:hover{ background:#FFF; height:28px;}
+/*blog-score.jsp*/
+.score_info{ margin:10px 0 10px 0;}
+.score_info tr{border-top:none;}
+.myFootprints{ margin:20px 0 10px 0;}
+.myFootprints thead{ background:#EFFAFF;}
+.myFootprints td{ border:1px solid #108AC6; padding-left:10px;}
+/*myDownload.jsp*/
+.topic{ float:left; width:100%; height:30px; line-height:30px; margin-bottom:10px;}
+.topic h3{ display:block;float:left; height:30px; margin:0;}
+.topic a:link,.topic a:visited{ display:block;float:right; height:26px; line-height:26px; text-decoration:none; color:#FFF; font-weight:bold; background:#108AC6; padding:0 5px 0 5px; margin:2px 10px 0 0;}
+/*upload.jsp*/
+.upload{ margin-top:15px;}
+.upload tr{border:0; height:60px;}
+.upload input,.upload select{ border:1px solid #108AC6; height:22px;}
+.upload input[type="text"]{ padding-left:5px;}
+.upload input[type="submit"]{ background:#108AC6; color:#FFF;}
+

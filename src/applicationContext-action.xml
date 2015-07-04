@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="LoginAction" class="com.sedg.action.LoginAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+		<property name="articleService" ref="ArticleService" ></property>
+	</bean>
+	<bean id="RegisterAction" class="com.sedg.action.RegisterAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+	</bean>
+	<bean id="BlogAction" class="com.sedg.action.BlogAction" scope="prototype">
+		<property name="articleService" ref="ArticleService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="sortService" ref="SortService" ></property>
+		<property name="commentService" ref="CommentService" ></property>
+		<property name="collectService" ref="CollectService" ></property>
+		<property name="postService" ref="PostService" ></property>
+		<property name="replyService" ref="ReplyService" ></property>
+		<property name="scoreService" ref="ScoreService" ></property>
+	</bean>
+	<bean id="UserAction" class="com.sedg.action.UserAction" scope="prototype">
+		<property name="userService" ref="UserService" ></property>
+		<property name="articleService" ref="ArticleService" ></property>
+		<property name="sortService" ref="SortService" ></property>
+		<property name="collectService" ref="CollectService" ></property>
+		<property name="commentService" ref="CommentService" ></property>
+		<property name="postService" ref="PostService" ></property>
+		<property name="replyService" ref="ReplyService" ></property>
+		<property name="scoreService" ref="ScoreService" ></property>
+		<property name="downloadService" ref="DownloadService" ></property>
+	</bean>
+	<bean id="SortAction" class="com.sedg.action.SortAction" scope="prototype">
+		<property name="sortService" ref="SortService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="articleService" ref="ArticleService" ></property>
+	</bean>
+	<bean id="CollectAction" class="com.sedg.action.CollectAction" scope="prototype">
+		<property name="collectService" ref="CollectService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="articleService" ref="ArticleService" ></property>
+	</bean>
+	<bean id="CommentAction" class="com.sedg.action.CommentAction" scope="prototype">
+		<property name="commentService" ref="CommentService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="articleService" ref="ArticleService" ></property>
+	</bean>
+	<bean id="PostAction" class="com.sedg.action.PostAction" scope="prototype">
+		<property name="postService" ref="PostService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="replyService" ref="ReplyService" ></property>
+	</bean>
+	<bean id="ReplyAction" class="com.sedg.action.ReplyAction" scope="prototype">
+		<property name="replyService" ref="ReplyService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="postService" ref="PostService" ></property>
+	</bean>
+	<bean id="ResourceAction" class="com.sedg.action.ResourceAction" scope="prototype">
+		<property name="resourceService" ref="ResourceService" ></property>
+		<property name="userService" ref="UserService" ></property>
+		<property name="downloadService" ref="DownloadService" ></property>
+		<property name="scoreService" ref="ScoreService" ></property>
+	</bean>
+</beans>

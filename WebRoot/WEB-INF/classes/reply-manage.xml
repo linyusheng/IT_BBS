@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="reply-manage" extends="com.sedg">
+		<action name="saveReply" class="ReplyAction" method="saveReply">
+			<result type="redirect">/showPost?id=${post.postId}</result>
+		</action>
+		<action name="deleteReply" class="ReplyAction" method="deleteReply">
+			<result type="redirect">/myComment</result>
+		</action>
+	</package>
+</struts>

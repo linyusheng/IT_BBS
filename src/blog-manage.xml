@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="blog-manage" extends="com.sedg">
+		<action name="saveBlog" class="BlogAction" method="saveBlog">
+			<result name="success">/user-center/blog-show.jsp</result>
+		</action>
+		<action name="editBlog" class="BlogAction" method="editBlog">
+			<result name="success">/user-center/add-blog.jsp</result>
+		</action>
+		<action name="deleteBlog" class="BlogAction" method="deleteBlog">
+			<result type="redirect">/myBlog</result>
+		</action>
+		<action name="saveSort" class="SortAction" method="saveSort">
+			<result type="redirect">/sortBlog</result>
+		</action>
+		<action name="deleteSort" class="SortAction" method="deleteSort">
+			<result type="redirect">/sortBlog</result>
+		</action>
+		<action name="editSort" class="SortAction" method="editSort">
+			<result type="redirect">/sortBlog</result>
+		</action>
+		<!-- 浏览博客管理 -->
+		<action name="showBlog" class="BlogAction" method="loadBlogerMessage">
+			<result name="success">/blog-manage/show-blog.jsp</result>
+		</action>
+		<action name="listBlog" class="BlogAction" method="loadBloger">
+			<result name="success">/blog-manage/list-blog.jsp</result>
+		</action>
+		<action name="categoryBlog" class="BlogAction" method="categoryBlog">
+			<result name="success">/blog-manage/list-blog.jsp</result>
+		</action>
+		<action name="askProblem" class="BlogAction" method="loadPost">
+			<result name="success">/blog-manage/post-ask.jsp</result>
+		</action>
+		<action name="answerProblem" class="BlogAction" method="loadPost">
+			<result name="success">/blog-manage/post-answer.jsp</result>
+		</action>
+	</package>
+</struts>

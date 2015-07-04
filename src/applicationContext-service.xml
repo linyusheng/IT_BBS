@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="ArticleService" class="com.sedg.service.ArticleService">
+		<property name="articleDAO">
+			<ref bean="ArticleDAO" />
+		</property>
+	</bean>
+	<bean id="CollectService" class="com.sedg.service.CollectService">
+		<property name="collectDAO">
+			<ref bean="CollectDAO" />
+		</property>
+	</bean>
+	<bean id="CommentService" class="com.sedg.service.CommentService">
+		<property name="commentDAO">
+			<ref bean="CommentDAO" />
+		</property>
+	</bean>
+	<bean id="DownloadService" class="com.sedg.service.DownloadService">
+		<property name="downloadDAO">
+			<ref bean="DownloadDAO" />
+		</property>
+	</bean>
+	<bean id="PhotoService" class="com.sedg.service.PhotoService">
+		<property name="photoDAO">
+			<ref bean="PhotoDAO" />
+		</property>
+	</bean>
+	<bean id="PostService" class="com.sedg.service.PostService">
+		<property name="postDAO">
+			<ref bean="PostDAO" />
+		</property>
+	</bean>
+	<bean id="ReplyService" class="com.sedg.service.ReplyService">
+		<property name="replyDAO">
+			<ref bean="ReplyDAO" />
+		</property>
+	</bean>
+	<bean id="ResourceService" class="com.sedg.service.ResourceService">
+		<property name="resourceDAO">
+			<ref bean="ResourceDAO" />
+		</property>
+	</bean>
+	<bean id="ScoreService" class="com.sedg.service.ScoreService">
+		<property name="scoreDAO">
+			<ref bean="ScoreDAO" />
+		</property>
+	</bean>
+	<bean id="SortService" class="com.sedg.service.SortService">
+		<property name="sortDAO">
+			<ref bean="SortDAO" />
+		</property>
+	</bean>
+	<bean id="UserService" class="com.sedg.service.UserService">
+		<property name="userDAO">
+			<ref bean="UserDAO" />
+		</property>
+	</bean>
+
+</beans>

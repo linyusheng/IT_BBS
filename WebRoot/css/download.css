@@ -1,0 +1,14 @@
+/* CSS Document */
+.header{width:950px; margin:0 auto 10px auto; height:90px;}
+.header .logo{ float:left;}
+.header .ad{float:right;}
+
+.page{width:950px; margin:0 auto; overflow:hidden;}
+.page h3{ display:block; height:30px; line-height:30px;}
+table{float:left;width:950px; border-collapse:collapse; font-size:12px;}
+thead{ font-weight:bold;}
+thead tr{ background:#EFFAFF;}
+tr{height:30px;}
+td{border:1px solid #108AC6; padding-left:5px;}
+tbody tr td a:link,tbody tr td a:visited{ color:#108AC6; display:block; float:left;line-height:15px; margin-right:3px;}
+tbody tr td a:hover{color:#FFF; background:#108AC6;}

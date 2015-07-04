@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- Struts2标签外观设置 -->
+	<constant name="struts.ui.theme" value="simple" /> 
+	<constant name="struts.ui.templateDir" value="template" /> 
+	<constant name="struts.ui.templateSuffix" value="ftl" /> 
+	
+	<!-- struts2委托spring管理 -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.i18n.encoding" value="utf-8"/>
+	
+	<!-- struts2缺省配置 -->
+	<include file="struts-default.xml"></include>
+
+	<package name="com.sedg" extends="struts-default,json-default">
+		<!-- 全局映射元素，当在action里找不到相匹配的result时，就到全局变量里找 -->
+		<global-results>
+			<result name="login">/login.jsp</result>
+			<result name="fail">/login.jsp</result>					
+		</global-results>
+		<!-- 全局异常元素 -->
+		<global-exception-mappings>
+			<exception-mapping result="exception" exception="java.lang.Exception"></exception-mapping>
+		</global-exception-mappings>
+	</package>
+	
+	<!-- 加载各个模块的配置文件-->
+	<include file="login-register.xml"></include>
+	<include file="user-manage.xml"></include>
+	<include file="blog-manage.xml"></include>
+	<include file="collect-manage.xml"></include>
+	<include file="comment-manage.xml"></include>
+	<include file="post-manage.xml"></include>
+	<include file="reply-manage.xml"></include>
+	<include file="resource-manage.xml"></include>
+</struts>
+ 

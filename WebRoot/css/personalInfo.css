@@ -1,0 +1,57 @@
+/* CSS Document */
+
+/*用户中心body_right部分，此处是个人资料页面*/
+	
+	/*个人资料导航*/
+	.nav{ width:100%; float:left; height:34px;}
+	/*导航中的每一项*/
+	.nav li{ font-size:14px;  float:left; width:160px; height:34px;-webkit-transition:all 0.35s linear; cursor:pointer; text-align:center; line-height:32px; list-style-type:none; font-weight:bold;}
+	.nav li.on{ color:#108AC6; font-weight:bold;}
+	/*导航栏下面的长长的水平线*/
+	.line{ width:708px; float:left; position:relative; left:0; top:0px;height: 2px; background:#dadada;}
+	/*被选中的项的下面的一小段水平线*/
+	.s_line{position: absolute; display:block; width:160px;z-index: 1; top: -7px;left: 0; height: 7px;border-bottom: 2px solid #108AC6; overflow: hidden; text-align: center;}
+	.s_line b{display: inline-block; margin-top: -8px; width: 0;height: 0; border-style: dashed dashed solid; border-width: 10px; border-color: transparent transparent #108AC6; overflow: hidden;zoom: 1;
+font-size: 0;}
+	
+	/*个人资料容器*/
+	.infobox_content{width:708px; margin: 0px auto; }
+	/*切换的标签页*/
+	.item_tab{min-height: 345px; padding: 20px;}
+	/*表单里的每一项，即每一行，用自适应高度的li来布局*/
+	.item_tab li{ width:618px; min-height:30px; padding-top:10px;  margin: 10px auto; list-style-type:none; }
+	.li_left{ float:left; width:100px; min-height:30px; font-size:14px; color:#333; text-align:right; line-height:30px;margin-top:5px; }
+	.li_right{ float:right; width:508px; min-height:30px;font-size:14px; text-align: left;line-height:30px; margin-top:5px;}
+	/*li右边没有边框，只显示内容的div*/
+	.show_text{ width:200px; height:20px; font-size:14px; text-align: left; line-height:20px; margin-top:5px; padding-left:5px;}
+	/*li右边有边框的输入文本框*/
+	.input_text{ width:200px; height:20px; font-size:14px; text-align: left; line-height:20px; margin-top:3px; padding-left:5px; border:1px solid #108AC6; box-shadow: 0 0 8px #E6E6FA;}
+	select{height:23px; border:1px solid #108AC6; margin-top:5px;}
+	/*li右边的输入文本域*/
+	.input_area{ height:100px; width:330px; overflow-x:hidden; resize:none; font-size:14px; text-align: left; line-height:20px; padding-left:5px; border:1px solid #108AC6; box-shadow: 0 0 8px #E6E6FA;}
+	/*表单里面的独立水平线*/
+	.div_hr{ width:668px; height:5px; border-bottom:dashed #CCCCCC 1px; margin:20px 0 10px 0;}
+	/*类似“提交修改”这样的按钮*/
+	.input_button{ width:60px; height:25px; border:1px solid #108AC6; font-size:12px; cursor:pointer; color:#FFF; background-color:#108AC6; text-decoration:none;}
+	/*分隔上下文的空白div*/
+	.black{ width:668px; height:1px; margin-top:5px; }
+	/*包含文本域左边跟右边的div，它的外层紧贴着li*/
+	.area_div{ width:618px;height:120px;}
+	/*文本域div左边的标签*/
+	.area_label{ float:left; height:110px; width:100px; margin-top:5px;min-height:20px; font-size:14px; color:#333; text-align:right; line-height:20px;}
+	/*文本域div右边包含<textarea>标签和提示语的div*/
+	.area_input{ float:right; width:508px; height:110px;font-size:14px; text-align: left;line-height:20px; margin-top:5px; }
+	/*<textarea>标签右边的提示语的id*/
+	#signature{font-size:18px; font-weight:bold; color:#009900; font-style:italic;}
+	#introduction{font-size:18px; font-weight:bold; color:#009900; font-style:italic;}
+	#hobby{font-size:18px; font-weight:bold; color:#009900; font-style:italic;}
+	
+	/*密码检测层*/
+	#li_complexity{width:618px; min-height:30px; padding-top:10px;  margin: 10px auto; list-style-type:none; }
+	#li_complexity_left{ float:left; width:100px; min-height:30px; font-size:14px; font-weight:bold; color:#999; text-align:right; line-height:30px; margin-top:5px; }
+	#li_complexity_right{ float:left; width:200px; min-height:30px;font-size:14px; text-align: left;line-height:30px; padding-left:10px; margin-top:5px;}
+	/*确认密码成功的提示层*/	
+	#confirm_password_ok{ width:200px; height:20px; font-size:14px; color:#009900; font-weight:bold; text-align: left; line-height:20px; margin-top:3px; padding-left:5px; }
+	/*确认密码不成功的提示层*/
+	#confirm_password_fail{ width:200px; height:20px; font-size:14px; color:#F00; font-weight:bold; text-align: left; line-height:20px; margin-top:3px; padding-left:5px; }
+	

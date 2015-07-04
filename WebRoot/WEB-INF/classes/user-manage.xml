@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="user-manage" extends="com.sedg">
+		<action name="myBlog" class="UserAction" method="loadUserMessage">
+			<result name="success">/user-center/blog-admin.jsp</result>
+		</action>
+		<action name="writeBlog" class="UserAction" method="loadUserMessage">
+			<result name="success">/user-center/add-blog.jsp</result>
+		</action>
+		<action name="readBlog" class="UserAction" method="readBlog">
+			<result name="success">/user-center/blog-show.jsp</result>
+		</action>
+		<action name="sortBlog" class="UserAction" method="loadUserMessage">
+			<result name="success">/user-center/blog-sort.jsp</result>
+		</action>
+		<action name="myScore" class="UserAction" method="myScore">
+			<result name="success">/user-center/blog-score.jsp</result>
+		</action>
+		<action name="myAsk" class="UserAction" method="myPost">
+			<result name="success">/user-center/post-ask.jsp</result>
+		</action>
+		<action name="myAnswer" class="UserAction" method="myPost">
+			<result name="success">/user-center/post-answer.jsp</result>
+		</action>
+		<action name="myComment" class="UserAction" method="myComment">
+			<result name="success">/user-center/blog-comment.jsp</result>
+		</action>
+		<action name="myCollect" class="UserAction" method="myCollect">
+			<result name="success">/user-center/blog-collect.jsp</result>
+		</action>
+		<action name="myDownload" class="UserAction" method="myDownload">
+			<result name="success">/user-center/myDownload.jsp</result>
+		</action>
+		<action name="uploadResources" class="UserAction" method="uploadResources">
+			<result name="success">/user-center/upload.jsp</result>
+		</action>
+		<action name="personalInfo" class="UserAction" method="loadUserMessage">
+			<result name="success">/user-center/personalInfo.jsp</result>
+		</action>
+		<action name="categoriesBlog" class="UserAction" method="categoriesBlog">
+			<result name="success">/user-center/blog-admin.jsp</result>
+		</action>
+		<action name="searchBlog" class="UserAction" method="searchBlog">
+			<result name="success">/user-center/blog-admin.jsp</result>
+		</action>
+		<action name="downloadUserPhoto" class="UserAction" method="downloadUserPhoto">
+		</action>
+		<!-- 用户信息保存操作 -->
+		<action name="saveInfo" class="UserAction" method="saveInfo">
+			<result type="redirect">/personalInfo</result>
+		</action>
+		<action name="savePassword" class="UserAction" method="savePassword">
+			<result type="redirect">/personalInfo</result>
+		</action>
+		<action name="passwordValidate" class="UserAction" method="passwordValidate">
+		</action>
+	</package>
+</struts>

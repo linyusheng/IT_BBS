@@ -1,0 +1,19 @@
+/*    模版样式   */
+body{margin:0; padding:0; font-size:12px; font-family: "宋体"; }
+h1,h4,ul,li,dl,dd,p{margin: 0; padding: 0; list-style: none; border:0;}
+/* 页眉 */
+.top{height:18px;padding:5px; background:#FFF;}
+.top ul{ display:block;width:950px; height:18px;margin:0 auto; line-height:18px;}
+.top ul li{ display:block;float:left; margin-right:7px; color:#666;}
+.top ul li a:link,.top ul li a:visited{ text-decoration:none;color:#666;}
+.top ul li a:hover{color:#BC2A4D; text-decoration:underline;}
+/* 页脚 */
+.footer{ width:100%; height:60px; margin-top:30px; padding-top:20px;  font-size:14px; background:#FFF;}
+.footer p{ display:block;width:950px; margin:0 auto; text-align:center; line-height:60px;border-top:1px solid #DDDDDD;}
+/* 分页 */
+.paging{ float:left; width:100%; height:22px;text-align:center; line-height:20px;}
+.paging dl dd{ display:block;float:left;}
+.paging dl dd a:link,.paging dl dd a:visited{ display:block; float:left; width:60px;height:20px;text-decoration:none; border:1px solid #006699; color:#006699; margin-right:10px;}
+.paging dl dd a:hover{ background:#006699; font-weight:bold;color:#FFF;}
+.paging dl dd input[type="text"]{border:1px solid #006699;}
+.noStyle{width:60px; height: 20px;margin-right:10px;border:1px solid #999;color:#999;}

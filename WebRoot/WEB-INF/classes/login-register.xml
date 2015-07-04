@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="login-register" extends="com.sedg">
+		<!-- 用户登录模块 -->
+		<action name="login" class="LoginAction" method="login">
+			<result name="success" type="redirect">/index</result>
+		</action>
+		<action name="loginValidate" class="LoginAction" method="loginValidate">
+		</action>
+		<action name="logout" class="LoginAction" method="logout">
+			<result type="redirect">/index</result>
+		</action>
+		<action name="index" class="LoginAction" method="enterIndex">		
+			<result>/index.jsp</result>
+		</action>
+		<action name="category" class="LoginAction" method="category">		
+			<result>/index.jsp</result>
+		</action>
+		<action name="findBlog" class="LoginAction" method="findBlog">		
+			<result>/index.jsp</result>
+		</action>
+		<action name="downloadBlogPhoto" class="LoginAction" method="downloadBlogPhoto"></action>
+		<!-- 注册模块 -->
+		<action name="registerPage" class="RegisterAction" method="doNothing">
+			<result>/register.jsp</result>
+		</action>
+		<action name="register" class="RegisterAction" method="register">
+			<result name="success">/success.jsp</result>
+		</action>
+		<action name="isHaveUser" class="RegisterAction" method="isHaveUser">
+		</action>
+	</package>
+</struts>

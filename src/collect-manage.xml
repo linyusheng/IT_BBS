@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="collect-manage" extends="com.sedg">
+		<action name="collect" class="CollectAction" method="collect">
+		</action>
+		<action name="deleteCollect" class="CollectAction" method="deleteCollect">
+			<result type="redirect">/myCollect</result>
+		</action>
+	</package>
+</struts>
